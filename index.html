@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, Paper, Scissors game</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1>Let's play Rock, Paper, Scissors!</h1>
+    <main>
+      <details class="rules-container">
+        <summary>Reglas del juego</summary>
+
+        <p>Jugaras contra una IA.</p>
+        <p>Puedes elegir entre piedra, papel o tijera.</p>
+        <p>El primero que gane 3 rondas gana.</p>
+
+        <p>Aqui estan las normas para ganar una ronda:</p>
+        <ul>
+          <li>Piedra gana a tijeras</li>
+          <li>Tijeras gana a papel</li>
+          <li>Papel gana a piedra</li>
+        </ul>
+        <p>
+          Si el jugador y la IA sacan lo mismo (ej. ambos sacan papel), entonces nadie se lleva el punto.
+        </p>
+      </details>
+
+      <div class="score-container">
+        <strong>
+            Puntuación de jugador: <span class="score" id="player-score">0</span>
+        </strong>
+        <strong>
+            Puntuación de IA:
+            <span class="score" id="computer-score">0</span>
+        </strong>
+      </div>
+
+      <section class="options-container">
+        <h2>Elige una opción:</h2>
+        <div class="btn-container">
+          <button id="rock-btn" class="btn">Piedra</button>
+          <button id="paper-btn" class="btn">Papel</button>
+          <button id="scissors-btn" class="btn">Tijera</button>
+        </div>
+      </section>
+
+      <div class="results-container">
+        <p id="results-msg"></p>
+        <p id="winner-msg"></p>
+        <button class="btn" id="reset-game-btn">¿Jugar de nuevo?</button>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
